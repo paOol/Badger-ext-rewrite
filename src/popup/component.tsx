@@ -1,5 +1,7 @@
 import React, { FunctionComponent } from "react";
+
 import { Hello } from "@src/components/hello";
+import { GlobalStyle, ExtensionContainer } from "@src/styles/styles";
 import { browser } from "webextension-polyfill-ts";
 
 export const Popup: FunctionComponent = () => {
@@ -9,14 +11,9 @@ export const Popup: FunctionComponent = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        minWidth: "500px",
-        minHeight: "500px",
-        display: "grid"
-      }}
-    >
+    <ExtensionContainer>
       <Hello />
-    </div>
+      <GlobalStyle />
+    </ExtensionContainer>
   );
 };

@@ -1,9 +1,14 @@
 import React, { FunctionComponent } from "react";
+import styled from "styled-components";
 
 export const Hello: FunctionComponent = () => {
   return (
-    <div>
+    <Red>
       <h1 className="">Example Header text</h1>
-    </div>
+    </Red>
   );
 };
+
+export const Red = styled.div`
+  color: red;
+`;
