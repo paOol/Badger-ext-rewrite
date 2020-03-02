@@ -2,7 +2,19 @@
 
 ## Development
 
-- `yarn dev` watches for changes. you will have to go to chrome://extensions/ and enable Developer mode. After that, click 'Load unpacked' and select the `badger/dist` directory. Click the badger icon in the toolbar
+- `yarn dev` watches for changes.
+
+### Chrome Dev
+
+you will have to go to chrome://extensions/ and enable Developer mode.
+click `Load unpacked` and select the `badger/dist` directory.
+Click the badger icon in the toolbar
+
+### Firefox Dev
+
+go to `about:debugging#/runtime/this-firefox`
+then click `Load Temporary Add-on`
+point to either the `dist/manifest.json` or the zip file from running the build command.
 
 ## Build
 
