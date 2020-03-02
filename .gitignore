@@ -7,7 +7,7 @@ dist/js/*
 
 node_modules/
 .DS_Store
-builds/
+builds/*.zip
 
 # Logs
 logs
